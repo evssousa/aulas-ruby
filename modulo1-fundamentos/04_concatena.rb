@@ -7,12 +7,23 @@ ano = gets.chomp.to_i
 print "Informe o preço do filme: "
 preco = gets.chomp.to_f
 
-# 1 - Contacatenação e exibição dos valores
-puts "Nome do filme: #{nome}"
-puts "Ano de lançamento #{ano.to_s}"
-puts "Preço do filme: #{preco.to_s}"
+# =========================================================
+puts "= " * 10 # 1-Concatenando e exibindo valores
+# =========================================================
+puts "Nome do filme: " + nome
+puts "Ano de lançamento: " + ano.to_s
+puts "Preço do filme: " + preco.to_s
 
-# 2 - String Multilinha
+# =========================================================
+puts "= " * 10 # 2-Variável dentro da string (utilizando expressão #{})
+# =========================================================
+puts "Nome do filme: #{nome}"
+puts "Ano de lançamento: #{ano}"
+puts "Preço do filme: #{preco}"
+
+# =========================================================
+puts "= " * 10 # 3-String multilinha
+# =========================================================
 puts <<~MULTILINHA
     ==========================
     Nome do filme: #{nome}
