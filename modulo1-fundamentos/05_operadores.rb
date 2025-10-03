@@ -1,3 +1,10 @@
+# =========================================================
+=begin
+    Podemos utilizar para interagir com diferentes
+    cálculos aritméticos e realizarmos comparações.
+=end
+# =========================================================
+
 print "Digite o primeiro número:"
 num1 = gets.chomp.to_i
 print "Digite o segundo número"

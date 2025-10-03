@@ -1,3 +1,10 @@
+# =========================================================
+=begin
+    Podemos deixar as mensagens mais formatadas, separando
+    os textos dos respectivos valores das variáveis declaradas.
+=end
+# =========================================================
+
 print "Informe o nome do filme: "
 nome = gets.chomp
 

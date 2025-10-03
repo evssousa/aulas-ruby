@@ -1,4 +1,11 @@
 # =========================================================
+=begin
+    O gets tem como objetivo lê dados em um programa, 
+    tornando assim, o programa mais interativo.
+=end
+# =========================================================
+
+# =========================================================
 puts "= " * 10 # 1-Recebendo informações dinâmicas
 # =========================================================
 print "Informe o nome do filme: "
