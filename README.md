@@ -1,5 +1,4 @@
 # Aulas de Ruby
-
 ♦️ Essas aulas e exercícios de Ruby tem objetivo ajudar iniciantes na linguagem e aprimorar conhecimentos, com aulas em formato de código e exercícios para praticar.
 
 ### Ruby é...
@@ -23,5 +22,8 @@ ola = Saudacao.new("mundo")
 # Saída: "Olá Mundo!"
 ola.sauda
 ```
+
+### Como executar os arquivos do repositório
+Faça Fork no repositório (isso também fará com que você receba atualizações). Abra o repositório no Codespace ou localmente, e no terminal execute `ruby nome_do_arquivo.rb`.
 
 Site oficial: <a href="https://www.ruby-lang.org/pt/" target="_blank">https://www.ruby-lang.org/pt/</a>
