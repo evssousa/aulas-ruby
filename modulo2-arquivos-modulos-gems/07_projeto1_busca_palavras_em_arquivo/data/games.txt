@@ -1,6 +1,7 @@
 SuperMarioWorld
 ResidentEvil
 SpiderMan
+SuperMarioBros
 Fifa
 PES
 TheLastOfUs
