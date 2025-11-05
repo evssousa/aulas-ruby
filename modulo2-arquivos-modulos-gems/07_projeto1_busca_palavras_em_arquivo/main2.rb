@@ -1,7 +1,7 @@
 # =========================================================
 =begin
     Esse pequeno projeto tem objetivo buscar palavras 
-    em arquivos de texto.
+        em arquivos de texto.
 =end
 # =========================================================
 
