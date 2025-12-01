@@ -1,13 +1,16 @@
 require 'csv'
 
-CSV.open("data/contatos.csv", "w") do |csv|
-    print "Digite o nome da pessoa: "
-    nome = gets.chomp
-    print "Digite a idade da pessoa: "
-    idade = gets.chomp.to_i
-    print "Digite a cidade que a pessoa mora: "
-    cidade = gets.chomp
+print "Digite o nome da pessoa: "
+nome = gets.chomp
+print "Digite a idade da pessoa: "
+idade = gets.chomp.to_i
+print "Digite a cidade que a pessoa mora: "
+cidade = gets.chomp
 
-    csv << ["Nome", "Idade", "Cidade"]
+CSV.open("data/contatos.csv", "a") do |csv|
     csv << [nome, idade, cidade]
+end
+
+CSV.foreach("data/contatos.csv", headers: true) do |row|
+    puts "Nome: #{row["Nome"]}, Idade: #{row["Idade"]}, Cidade: #{row["Cidade"]}"
 end
