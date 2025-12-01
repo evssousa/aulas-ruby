@@ -25,7 +25,6 @@ end
 # =========================================================
 puts "= " * 10 # 2-Calculo perímetro de um círculo
 # =========================================================
-# 2-Calculo perimetro de um circulo
 def calcular_perimetro(raio)
     return 2 * Math::PI * raio
 end
