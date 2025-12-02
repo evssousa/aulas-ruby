@@ -3,7 +3,7 @@ require 'csv'
 print "Digite o nome da pessoa: "
 nome = gets.chomp
 print "Digite a idade da pessoa: "
-idade = gets.chomp.to_i
+idade = gets.chomp
 print "Digite a cidade que a pessoa mora: "
 cidade = gets.chomp
 
