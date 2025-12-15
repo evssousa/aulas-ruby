@@ -26,4 +26,5 @@ puts game1 #<Game:0x00007a8b9b04d110>
 
 # Com p mostra as informações internas do objeto
 p game1 
-#<Game:0x00007a8b9b04d110 @nome="Pes", @genero="Esporte", @multiplayer=true, @versao=[2018, 2019, 2020], @preco=100>
+#<Game:0x00007a8b9b04d110 @nome="Pes", @genero="Esporte", 
+#@multiplayer=true, @versao=[2018, 2019, 2020], @preco=100>
