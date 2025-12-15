@@ -1,6 +1,6 @@
 # =========================================================
 =begin
-    02_inicializacao.rb
+    03_metodo_instancia.rb
     Iremos aprender a utilizar métodos de instância.
 =end
 # =========================================================
@@ -20,7 +20,8 @@ class Game
 
     # Criando métodos na classe Game
     # Para utilizar os atributos da classe, é necessário
-    # adicionar o @ na expessão, parecido com o this no javascript
+    # adicionar o @ na expessão, parecido com o this no 
+    # javascript
     def informacao
         puts "O jogo é o gênero #{@genero} e as versões: #{@versao}"
     end
