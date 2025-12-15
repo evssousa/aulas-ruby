@@ -40,7 +40,7 @@ puts b
 puts "= " * 10 # 4-Operadores de comparação
 # =========================================================
 maior_que = num1 > num2
-menor-que = num1 < num2
+menor_que = num1 < num2
 igual = num1 == num2
 diferente = num1 != num2
 maior_ou_igual = num1 >= num2
