@@ -1,6 +1,6 @@
 # =========================================================
 =begin
-    08_attr.rb
+    09_attr.rb
     Iremos aprender e entender sobre como definir
     atributos.
 =end
