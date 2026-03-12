@@ -1,4 +1,6 @@
 class Veiculo
+  attr_accessor :placa, :marca
+
   def initialize(placa, marca)
     @placa = placa
     @marca = marca
@@ -12,6 +14,8 @@ class Veiculo
 end
 
 class Carro < Veiculo
+  attr_accessor :portas
+
   def initialize(placa, marca, portas)
     super(placa, marca)
     @portas = portas
@@ -24,6 +28,8 @@ class Carro < Veiculo
 end
 
 class Moto < Veiculo
+  attr_accessor :cilindrada
+
   def initialize(placa, marca, cilindrada)
     super(placa, marca)
     @cilindrada = cilindrada
@@ -35,11 +41,12 @@ class Moto < Veiculo
   end
 end
 
-veiculo1 = Veiculo.new("ABC123", "Honda")
-puts veiculo1.detalhes
+def exibir_detalhes(veiculo)
+  puts veiculo.detalhes
+end
 
 carro1 = Carro.new("DEF456", "BYD", 4)
-puts carro1.detalhes
-
 moto1 = Moto.new("GHI789", "Yamaha", 150)
-puts moto1.detalhes
+
+exibir_detalhes(carro1)
+exibir_detalhes(moto1)
