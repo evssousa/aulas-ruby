@@ -12,6 +12,13 @@
 -- Depois disso poderá executar comandos SQL diretamente
 -- no banco.
 
+-- !!! OBSERVAÇÃO EXTREMAMENTE IMPORTANTE !!!
+-- Cada tópico é uma query nova, ou seja, deveria ser criada
+-- em um arquivo novo. Mas para não fazer vários arquivos,
+-- todas as querys estarão em um arquivo só (esse aqui). Então
+-- se você for criar a nova query e tiver a anterior
+-- descomentada, seu banco poderá duplicar as informações!
+
 -- =========================================================
 -- === 2-CRIANDO UMA TABELA
 -- =========================================================
