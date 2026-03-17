@@ -66,4 +66,6 @@ CREATE TABLE IF NOT EXISTS Clientes (
 -- =========================================================
 -- Listando tabelas existentes no banco: > .tables
 -- Visualizar a estrutura da tabela: > .schema Clientes
+-- Visualizar em formato de tabela: > .mode table
 -- Sair do SQLite: > .quit
+-- Ver documentação aqui: https://sqlite.org/cli.html
