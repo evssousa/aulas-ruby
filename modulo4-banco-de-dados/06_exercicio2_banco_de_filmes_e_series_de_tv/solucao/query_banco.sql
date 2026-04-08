@@ -7,22 +7,22 @@ CREATE TABLE IF NOT EXISTS Filmes (
     duracao INTEGER NOT NULL,
     avaliacao REAL NOT NULL,
     bilheteria REAL NOT NULL,
-    custo TEXT NOT NULL
+    custo REAL NOT NULL
 );
 
 INSERT INTO Filmes (titulo, diretor, ano, genero, duracao, avaliacao, bilheteria, custo)
 VALUES
-    ('Mad Max: Fury Road', 'George Miller', 2015, 'Ação', 120, 8.1, 375200000.00, '150.000.000,00'),
-    ('Star Wars', 'George Lucas', 1977, 'Sci-Fi', 121, 8.6, 775398007.00, '11.000.000,00'),
-    ('Super Mario Bros', 'Aaron Horvath, Michael Jelenic', 2023, 'Animação', 92, 7.3, 1300000000.00, '100.000.000,00'),
-    ('Pride and Prejudice', 'Joe Wright', 2005, 'Romance', 129, 7.8, 121147947.00, '28.000.000,00'),
-    ('Back to the Future', 'Robert Zemeckis', 1985, 'Sci-Fi', 116, 8.5, 381109762.00, '19.000.000,00'),
-    ('The Godfather', 'Francis Ford Coppola', 1972, 'Crime', 175, 9.2, 246120974.00, '6.000.000,00'),
-    ('The Lord of the Rings: The Return of the King', 'Peter Jackson', 2003, 'Fantasia', 201, 9.0, 1146030912.00, '94.000.000,00'),
-    ('Treasure Plane', 'Ron Clements, John Musker', 2002, 'Animação', 95, 7.2, 109578115.00, '140.000.000,00'),
-    ('Jurassic Park', 'Steven Spielberg', 1993, 'Aventura', 127, 8.1, 1043580597.00, '63.000.000,00'),
-    ('About Time', 'Richard Curtis', 2013, 'Romance', 123, 7.8, 87100000.00, '12.000.000,00'),
-    ('Transformers', 'Michael Bay', 2007, 'Ação', 144, 7.0, 709709780.00, '150.000.000,00');
+    ('Mad Max: Fury Road', 'George Miller', 2015, 'Ação', 120, 8.1, 375200000.00, 150000000.00),
+    ('Star Wars', 'George Lucas', 1977, 'Sci-Fi', 121, 8.6, 775398007.00, 11000000.00),
+    ('Super Mario Bros', 'Aaron Horvath, Michael Jelenic', 2023, 'Animação', 92, 7.3, 1300000000.00, 100000000.00),
+    ('Pride and Prejudice', 'Joe Wright', 2005, 'Romance', 129, 7.8, 121147947.00, 28000000.00),
+    ('Back to the Future', 'Robert Zemeckis', 1985, 'Sci-Fi', 116, 8.5, 381109762.00, 19000000.00),
+    ('The Godfather', 'Francis Ford Coppola', 1972, 'Crime', 175, 9.2, 246120974.00, 6000000.00),
+    ('The Lord of the Rings: The Return of the King', 'Peter Jackson', 2003, 'Fantasia', 201, 9.0, 1146030912.00, 94000000.00),
+    ('Treasure Plane', 'Ron Clements, John Musker', 2002, 'Animação', 95, 7.2, 109578115.00, 140000000.00),
+    ('Jurassic Park', 'Steven Spielberg', 1993, 'Aventura', 127, 8.1, 1043580597.00, 63000000.00),
+    ('About Time', 'Richard Curtis', 2013, 'Romance', 123, 7.8, 87100000.00, 12000000.00),
+    ('Transformers', 'Michael Bay', 2007, 'Ação', 144, 7.0, 709709780.00, 150000000.00);
 
 CREATE TABLE IF NOT EXISTS Series_TV (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
