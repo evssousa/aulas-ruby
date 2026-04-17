@@ -1,6 +1,6 @@
 # =========================================================
 =begin
-    Iremos aprender como inserir dados em uma tabela
+    Iremos aprender como atualizar dados de uma tabela
     utilizando Ruby com SQLite.
 =end
 # =========================================================
@@ -18,31 +18,26 @@ require 'sqlite3'
 
 db = SQLite3::Database.new 'fliperama.db'
 
-# Array de registros que serão inseridos
-registros = [
-  { name: 'Resident Evil 4', year: 2023, score: 9.5 },
-  { name: 'Spider Man 2', year: 2023, score: 9.0 }
-]
+# ID do registro que será atualizado
+id_do_registro = 1 # Altere conforme necessário
+
+# Novos valores
+new_name = 'Mortal Kombat 1'
+new_year = 2023
+new_score = 8.5
 
 begin
-  # Itera sobre os registros e insere no banco
-  registros.each do |registro|
-    name = registro[:name]
-    year = registro[:year]
-    score = registro[:score]
+  # Query de atualização
+  update_query = "UPDATE jogo SET name = '#{new_name}',
+                  year = #{new_year},
+                  score = #{new_score}
+                  WHERE id = #{id_do_registro}"
+  db.execute(update_query)
 
-    # Cria a instrução SQL de inserção
-    insert_query = "INSERT INTO jogo (name, year, score)
-                    VALUES ('#{name}', #{year}, #{score})"
-
-    # Executa a instrução SQL
-    db.execute(insert_query)
-  end
-
-  puts "Registros inseridos com sucesso!"
+  puts "Registro atualizado com sucesso!"
 
 ensure
-    db.close if db
+  db.close if db
 end
 
 # =========================================================
