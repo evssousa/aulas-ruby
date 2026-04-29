@@ -1,3 +1,12 @@
+# =========================================================
+# === 1-INSTALANDO A BIBLIOTECA NECESSÁRIA
+# =========================================================
+# Iremos instalar as seguintes bibliotecas:
+# > gem install mongo
+
+# =========================================================
+# === 2-ESTUDO DO CÓDIGO
+# =========================================================
 require 'mongo'
 
 # Conexão com o banco de dados
